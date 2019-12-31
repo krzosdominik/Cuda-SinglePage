@@ -1,0 +1,32 @@
+.page-header {
+  background-color: $welcome-bgColor;
+  padding-top: 60px;
+
+  .header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation__list {
+    list-style: none;
+    display: flex;
+
+    .navigation__item {
+      box-sizing: border-box;
+      a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "Titillium Web";
+        padding: 10px 20px;
+        transition: background-color 0.1s, border-radius 0.1s;
+
+        &:hover {
+          background-color: #643a79;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -338,6 +339,16 @@ template {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
 .row [class^="col-"] {
   padding: 20px 10px 10px 10px;
   margin-top: 10px;
@@ -360,6 +371,40 @@ template {
   .row .col-4-8 {
     width: 100%;
   }
+}
+
+.page-header {
+  background-color: #87509c;
+  padding-top: 60px;
+}
+
+.page-header .header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header .navigation__list {
+  list-style: none;
+  display: flex;
+}
+
+.page-header .navigation__list .navigation__item {
+  box-sizing: border-box;
+}
+
+.page-header .navigation__list .navigation__item a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Titillium Web";
+  padding: 10px 20px;
+  transition: background-color 0.1s, border-radius 0.1s;
+}
+
+.page-header .navigation__list .navigation__item a:hover {
+  background-color: #643a79;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
