@@ -446,4 +446,62 @@ body {
   background-color: #bb4915;
 }
 
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 4px;
+  background-color: #000000;
+  opacity: 0.15;
+  top: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.services {
+  height: 100vh;
+  background-color: #17c2a4;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services .services__header {
+  font-size: 40px;
+}
+
+.services .services__description {
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+
+.services .services__item {
+  padding: 20px;
+}
+
+.services .services__item img {
+  height: 120px;
+}
+
+.services .services__item .services__item--header {
+  text-transform: uppercase;
+  line-height: 18px;
+  letter-spacing: 0.48px;
+  margin-top: 50px;
+}
+
+.services .services__item .services__item--description {
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 4px;
+  background-color: #000000;
+  opacity: 0.15;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
