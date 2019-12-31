@@ -339,9 +339,10 @@ template {
   display: none;
 }
 
-* {
+body {
   margin: 0;
   padding: 0;
+  font-family: "Titillium Web";
 }
 
 .container {
@@ -375,7 +376,7 @@ template {
 
 .page-header {
   background-color: #87509c;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .page-header .header__flex {
@@ -397,7 +398,6 @@ template {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  font-family: "Titillium Web";
   padding: 10px 20px;
   transition: background-color 0.1s, border-radius 0.1s;
 }
@@ -405,6 +405,45 @@ template {
 .page-header .navigation__list .navigation__item a:hover {
   background-color: #643a79;
   border-radius: 5px;
+}
+
+.welcome {
+  background-color: #87509c;
+  height: calc(100vh - 122px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #f7f3ea;
+  text-align: center;
+}
+
+.welcome .welcome__header {
+  font-size: 40px;
+}
+
+.welcome .welcome__button {
+  margin-top: 60px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eb7d4b;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 25px 70px;
+  box-sizing: border-box;
+  transition: background-color .1s .1s ease-in-out;
+  cursor: pointer;
+}
+
+.welcome .welcome__button:focus {
+  outline: none;
+  border: 2px dashed #fff;
+}
+
+.welcome .welcome__button:hover {
+  background-color: #bb4915;
 }
 
 /*# sourceMappingURL=main.css.map */
