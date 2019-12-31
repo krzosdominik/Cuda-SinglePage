@@ -1,6 +1,9 @@
+$header-height: 80px;
+
 .page-header {
   background-color: $welcome-bgColor;
-  padding-top: 60px;
+  padding-top: 50px;
+  // height: $header-height;
 
   .header__flex {
     display: flex;
@@ -18,7 +21,6 @@
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
-        font-family: "Titillium Web";
         padding: 10px 20px;
         transition: background-color 0.1s, border-radius 0.1s;
 
