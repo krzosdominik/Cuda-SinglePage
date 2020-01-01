@@ -726,4 +726,108 @@ h2::after {
   }
 }
 
+.portfolio {
+  min-height: 100vh;
+  background-color: #ffdd99;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #393939;
+}
+
+.portfolio .portfolio__title {
+  font-size: 40px;
+}
+
+.portfolio .portfolio__description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  margin-top: -4px;
+}
+
+.portfolio .portfolio__buttons .portfolio__button {
+  border: none;
+  background-color: #e5c689;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 19.5px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 5px 0 5px;
+  width: 90px;
+  height: 40px;
+  transition: background-color 0.1s 0.1s;
+  cursor: pointer;
+}
+
+@media (max-width: 410px) {
+  .portfolio .portfolio__buttons .portfolio__button {
+    width: 100vw;
+    border-radius: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d39e35;
+  }
+}
+
+.portfolio .portfolio__buttons .portfolio__button:hover {
+  background-color: #fff;
+}
+
+.portfolio .portfolio__buttons .portfolio__button--active {
+  background-color: #fff;
+}
+
+.portfolio .portfolio__item .portfolio__item--picture img {
+  margin-top: 60px;
+}
+
+@media (max-width: 1150px) {
+  .portfolio .portfolio__item .portfolio__item--picture img {
+    margin-top: 20px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio .portfolio__item .portfolio__item--picture img {
+    margin-top: 20px;
+    height: 150px;
+  }
+}
+
+.portfolio .portfolio__item .portfolio__item--description {
+  font-size: 18px;
+  line-height: 19.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.36px;
+}
+
+.portfolio .portfolio__load-button {
+  margin-top: 60px;
+  border: none;
+  border-radius: 5px;
+  background-color: #17c2a4;
+  border-bottom: 4px solid #095044;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 25px 70px;
+  box-sizing: border-box;
+  transition: background-color 0.1s 0.1s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.portfolio .portfolio__load-button:focus {
+  outline: none;
+  border: 2px dashed #fff;
+}
+
+.portfolio .portfolio__load-button:hover {
+  background-color: #0c6757;
+}
+
 /*# sourceMappingURL=main.css.map */
