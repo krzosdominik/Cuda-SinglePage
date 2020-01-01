@@ -1,0 +1,54 @@
+.about {
+  min-height: 100vh;
+  background-color: $team-bgColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #3c4761;
+
+  .about__title {
+    font-size: $headers-size;
+  }
+
+  .about__description {
+    font-size: $description-size;
+    margin-top: -4px;
+  }
+
+  .about__persons {
+    box-sizing: border-box;
+    text-align: center;
+
+    .about__person {
+        
+      .person__name {
+        margin-bottom: -10px;
+        font-size: 24px;
+        line-height: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.48px;
+      }
+
+      .person__profession {
+        color: #30bae7;
+      }
+
+      .person__avatar img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .person__description {
+        display: block;
+        box-sizing: border-box;
+        padding: 0 10px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+      }
+    }
+  }
+}

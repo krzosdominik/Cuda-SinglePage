@@ -1,6 +1,6 @@
 .welcome {
   background-color: $welcome-bgColor;
-  height: calc(100vh - 122px);
+  min-height: calc(100vh - 122px);
   display: flex;
   justify-content: center;
   align-items: center;

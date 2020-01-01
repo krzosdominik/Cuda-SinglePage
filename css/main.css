@@ -346,8 +346,8 @@ body {
 }
 
 .container {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .row [class^="col-"] {
@@ -360,18 +360,110 @@ body {
   .row {
     display: flex;
   }
-  .row .col-1-8 {
+  .row .col-1 {
+    width: 8.33333%;
+  }
+  .row .col-2 {
+    width: 16.66667%;
+  }
+  .row .col-3 {
     width: 25%;
   }
-  .row .col-2-8 {
+  .row .col-4 {
+    width: 33.33333%;
+  }
+  .row .col-5 {
+    width: 41.66667%;
+  }
+  .row .col-6 {
     width: 50%;
   }
-  .row .col-3-8 {
+  .row .col-7 {
+    width: 58.33333%;
+  }
+  .row .col-8 {
+    width: 66.66667%;
+  }
+  .row .col-9 {
     width: 75%;
   }
-  .row .col-4-8 {
+  .row .col-10 {
+    width: 83.33333%;
+  }
+  .row .col-11 {
+    width: 91.66667%;
+  }
+  .row .col-12 {
     width: 100%;
   }
+}
+
+.contact__facebook-btn {
+  background-image: url("../../assets/facebook_icon.png");
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #bdd1df;
+  margin: 0 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.1s 0.1s ease-in-out;
+}
+
+.contact__facebook-btn:hover {
+  background-color: #4267b2;
+}
+
+.contact__linkedin-btn {
+  background-image: url("../../assets/linkedin_icon.png");
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #bdd1df;
+  margin: 0 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.1s 0.1s ease-in-out;
+}
+
+.contact__linkedin-btn:hover {
+  background-color: #4267b2;
+}
+
+.contact__twitter-btn {
+  background-image: url("../../assets/twitter_icon.png");
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #bdd1df;
+  margin: 0 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.1s 0.1s ease-in-out;
+}
+
+.contact__twitter-btn:hover {
+  background-color: #4267b2;
+}
+
+.contact__mail-btn {
+  background-image: url("../../assets/mail_icon.png");
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #bdd1df;
+  margin: 0 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.1s 0.1s ease-in-out;
+}
+
+.contact__mail-btn:hover {
+  background-color: #4267b2;
 }
 
 .page-header {
@@ -409,7 +501,7 @@ body {
 
 .welcome {
   background-color: #87509c;
-  height: calc(100vh - 122px);
+  min-height: calc(100vh - 122px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -427,13 +519,14 @@ body {
   border: none;
   border-radius: 5px;
   background-color: #eb7d4b;
+  border-bottom: 4px solid #a44012;
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bolder;
   padding: 25px 70px;
   box-sizing: border-box;
-  transition: background-color .1s .1s ease-in-out;
+  transition: background-color 0.1s 0.1s ease-in-out;
   cursor: pointer;
 }
 
@@ -464,7 +557,7 @@ h2::after {
 }
 
 .services {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #17c2a4;
   color: #fff;
   display: flex;
@@ -483,10 +576,6 @@ h2::after {
   margin-bottom: 80px;
 }
 
-.services .services__item {
-  padding: 20px;
-}
-
 .services .services__item img {
   height: 120px;
 }
@@ -500,6 +589,60 @@ h2::after {
 
 .services .services__item .services__item--description {
   font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.about {
+  min-height: 100vh;
+  background-color: #e7f1f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #3c4761;
+}
+
+.about .about__title {
+  font-size: 40px;
+}
+
+.about .about__description {
+  font-size: 18px;
+  margin-top: -4px;
+}
+
+.about .about__persons {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.about .about__persons .about__person .person__name {
+  margin-bottom: -10px;
+  font-size: 24px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+}
+
+.about .about__persons .about__person .person__profession {
+  color: #30bae7;
+}
+
+.about .about__persons .about__person .person__avatar img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.about .about__persons .about__person .person__description {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 10px;
   line-height: 24px;
   letter-spacing: 0.32px;
 }

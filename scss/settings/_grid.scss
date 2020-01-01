@@ -1,6 +1,6 @@
 $gap: 10px;
 $breakpoint: 760px;
-$column: 4;
+$column: 12;
 
 .row {
   [class^="col-"] {
@@ -13,7 +13,7 @@ $column: 4;
     display: flex;
 
     @for $i from 1 through $column {
-      .col-#{$i}-8 {
+      .col-#{$i} {
         width: 100% / $column * $i;
       }
     }

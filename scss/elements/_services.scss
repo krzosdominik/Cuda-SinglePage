@@ -1,5 +1,5 @@
 .services {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $services-bgColor;
   color: #fff;
   display: flex;
@@ -18,7 +18,7 @@
   }
 
   .services__item {
-    padding: 20px;
+    // padding: 20px;
 
     img {
       height: 120px;
