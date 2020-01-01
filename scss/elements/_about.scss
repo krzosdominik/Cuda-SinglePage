@@ -19,6 +19,7 @@
 
   .about__persons {
     box-sizing: border-box;
+    flex-wrap: wrap;
 
     .about__person {
       .person__name {
