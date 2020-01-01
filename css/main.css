@@ -350,6 +350,13 @@ body {
   padding-right: 100px;
 }
 
+@media (max-width: 750px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .row [class^="col-"] {
   padding: 20px 10px 10px 10px;
   margin-top: 10px;
@@ -477,6 +484,13 @@ body {
   align-items: center;
 }
 
+@media (max-width: 750px) {
+  .page-header .header__flex {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 .page-header .navigation__list {
   list-style: none;
   display: flex;
@@ -497,6 +511,12 @@ body {
 .page-header .navigation__list .navigation__item a:hover {
   background-color: #643a79;
   border-radius: 5px;
+}
+
+@media (max-width: 750px) {
+  .page-header .navigation__list .navigation__item a {
+    padding: 0 5px;
+  }
 }
 
 .welcome {
@@ -601,6 +621,7 @@ h2::after {
   align-items: center;
   flex-direction: column;
   color: #3c4761;
+  text-align: center;
 }
 
 .about .about__title {
@@ -614,7 +635,6 @@ h2::after {
 
 .about .about__persons {
   box-sizing: border-box;
-  text-align: center;
 }
 
 .about .about__persons .about__person .person__name {

@@ -9,6 +9,11 @@ $header-height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 750px) {
+      justify-content: center;
+      flex-direction: column;
+    }
   }
 
   .navigation__list {
@@ -27,6 +32,9 @@ $header-height: 80px;
         &:hover {
           background-color: #643a79;
           border-radius: 5px;
+        }
+        @media (max-width: 750px) {
+          padding: 0 5px;
         }
       }
     }

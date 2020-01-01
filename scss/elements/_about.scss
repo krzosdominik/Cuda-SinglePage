@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   color: #3c4761;
+  text-align: center;
 
   .about__title {
     font-size: $headers-size;
@@ -18,10 +19,8 @@
 
   .about__persons {
     box-sizing: border-box;
-    text-align: center;
 
     .about__person {
-        
       .person__name {
         margin-bottom: -10px;
         font-size: 24px;

@@ -1,10 +1,15 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Titillium Web";
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web";
 }
 
 .container {
-    padding-left: 100px;
-    padding-right: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  @media (max-width: 750px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
