@@ -1,23 +1,60 @@
 @mixin buttons($bg-color) {
-    margin-top: 60px;
-    border: none;
-    border-radius: 5px;
-    background-color: $bg-color;
-    color: #fff;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    padding: 25px 70px;
-    box-sizing: border-box;
-    transition: background-color .1s .1s ease-in-out;
-    cursor: pointer;
+  margin-top: 60px;
+  border: none;
+  border-radius: 5px;
+  background-color: $bg-color;
+  border-bottom: 4px solid darken($bg-color, 25);
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 25px 70px;
+  box-sizing: border-box;
+  transition: background-color 0.1s 0.1s ease-in-out;
+  cursor: pointer;
 
-    &:focus {
-        outline: none;
-        border: 2px dashed #fff;
-    }
+  &:focus {
+    outline: none;
+    border: 2px dashed #fff;
+  }
 
-    &:hover {
-        background-color: darken($bg-color, 20);
-    }
+  &:hover {
+    background-color: darken($bg-color, 20);
+  }
+}
+
+@mixin contact-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #bdd1df;
+  margin: 0 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.1s 0.1s ease-in-out;
+
+  &:hover {
+    background-color: #4267b2;
+  }
+}
+
+.contact__facebook-btn {
+  background-image: url("../../assets/facebook_icon.png");
+  @include contact-btn();
+}
+
+.contact__linkedin-btn {
+  background-image: url("../../assets/linkedin_icon.png");
+  @include contact-btn();
+}
+
+.contact__twitter-btn {
+  background-image: url("../../assets/twitter_icon.png");
+  @include contact-btn();
+}
+
+.contact__mail-btn {
+  background-image: url("../../assets/mail_icon.png");
+  @include contact-btn();
 }
