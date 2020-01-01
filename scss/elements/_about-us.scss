@@ -1,0 +1,46 @@
+.about-us {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $team-bgColor;
+  color: #3c4761;
+
+  .about-us__header {
+    font-size: $headers-size;
+  }
+
+  .about-us__description {
+    font-size: $description-size;
+  }
+
+  .about-us__persons {
+    text-align: center;
+
+    .about-us__person {
+      box-sizing: border-box;
+
+      .person__avatar img {
+        height: 150px;
+        width: 150px;
+      }
+
+      .person__name {
+        font-weight: bolder;
+        margin-bottom: -10px;
+      }
+
+      .person__profession {
+        color: #30bae7;
+      }
+
+      .person__description {
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        text-align: center;
+      }
+    }
+  }
+}

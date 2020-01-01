@@ -343,6 +343,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Titillium Web";
+  box-sizing: border-box;
 }
 
 .container {
@@ -502,6 +503,53 @@ h2::after {
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.32px;
+}
+
+.about-us {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7f1f8;
+  color: #3c4761;
+}
+
+.about-us .about-us__header {
+  font-size: 40px;
+}
+
+.about-us .about-us__description {
+  font-size: 18px;
+}
+
+.about-us .about-us__persons {
+  text-align: center;
+}
+
+.about-us .about-us__persons .about-us__person {
+  box-sizing: border-box;
+}
+
+.about-us .about-us__persons .about-us__person .person__avatar img {
+  height: 150px;
+  width: 150px;
+}
+
+.about-us .about-us__persons .about-us__person .person__name {
+  font-weight: bolder;
+  margin-bottom: -10px;
+}
+
+.about-us .about-us__persons .about-us__person .person__profession {
+  color: #30bae7;
+}
+
+.about-us .about-us__persons .about-us__person .person__description {
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
