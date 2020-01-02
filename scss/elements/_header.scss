@@ -15,7 +15,6 @@ $header-height: 80px;
 
     @media (max-width: 750px) {
       justify-content: center;
-      // flex-direction: column;
     }
   }
 
@@ -23,18 +22,7 @@ $header-height: 80px;
     list-style: none;
     display: flex;
 
-    @media (max-width: 750px) {
-      justify-content: center;
-      flex-direction: column;
-    }
-
     .navigation__item {
-      @media (max-width: 750px) {
-        margin-bottom: 30px;
-        padding: 0;
-        text-align: center;
-      }
-
       a {
         text-decoration: none;
         color: #fff;
@@ -42,9 +30,11 @@ $header-height: 80px;
         padding: 10px 20px;
         transition: background-color 0.1s, border-radius 0.1s;
 
-        &:hover {
-          background-color: #643a79;
-          border-radius: 5px;
+        @media (min-width: 750px) {
+          &:hover {
+            background-color: #643a79;
+            border-radius: 5px;
+          }
         }
       }
     }
