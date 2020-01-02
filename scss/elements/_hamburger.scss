@@ -2,12 +2,12 @@ $dark: #171717;
 $light: #ffffff;
 
 .hamburger {
-  @media (min-width: 750px) {
+  @media (min-width: 800px) {
     display: none;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .hamburger {
     padding: 10px;
     display: inline-block;
