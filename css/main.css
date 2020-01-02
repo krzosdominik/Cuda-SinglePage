@@ -895,4 +895,30 @@ h2::after {
   margin-top: -20px;
 }
 
+.page-footer {
+  background-color: #344B8E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer .links__list {
+  list-style: none;
+  display: flex;
+}
+
+.page-footer .links__list .links__item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 0.58px;
+  padding: 0 20px;
+  transition: color 0.1s 0.1s;
+}
+
+.page-footer .links__list .links__item a:hover {
+  color: #30bae7;
+}
+
 /*# sourceMappingURL=main.css.map */
