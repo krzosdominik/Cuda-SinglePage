@@ -830,4 +830,69 @@ h2::after {
   background-color: #0c6757;
 }
 
+.opinions {
+  min-height: 100vh;
+  background-color: #d74680;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+.opinions .opinions__title {
+  font-size: 40px;
+}
+
+.opinions .opinions__description {
+  font-size: 18px;
+  margin-top: -4px;
+}
+
+.opinion__item {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  letter-spacing: 0.35px;
+  line-height: 26px;
+}
+
+.opinion__item .opinion__avatar img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+
+.opinion__item .opinion__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.opinion__item .opinion__content .opinion__quotation {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 31.2px;
+  margin-left: -5px;
+}
+
+.opinion__item .opinion__content .opinion__author {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+}
+
+.opinion__item .opinion__content .opinion__author-profesion {
+  color: #ffdd99;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -20px;
+}
+
 /*# sourceMappingURL=main.css.map */
