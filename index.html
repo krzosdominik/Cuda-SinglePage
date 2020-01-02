@@ -11,6 +11,11 @@
 
         <header class="page-header">
             <div class="container header__flex">
+                <button class="hamburger">
+                    <span class="hamburger__box">
+                        <span class="hamburger__inner"></span>
+                    </span>
+                </button>
                 <figure>
                     <img src='./assets/logo.png' alt='Cuda logo' />
                 </figure>
@@ -21,405 +26,410 @@
                         </li>
                         <li class="navigation__item">
                             <a href='#about'>About</a>
-                            <li class="navigation__item">
-                                <a href='#work'>Work</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a href='#blog'>Blog</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a href='#contact'>Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+                        </li>
+                        <li class="navigation__item">
+                            <a href='#work'>Work</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href='#blog'>Blog</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href='#contact'>Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-            <section class="welcome">
-                <article class="container">
-                    <h1 class="welcome__header">
-                        Hi there! We are the new kids on the block <br />
-                        and we build awesome websites and mobile apps.
-                    </h1>
-                    <button class="welcome__button">Work with us!</button>
+        <section class="welcome">
+            <article class="container">
+                <h1 class="welcome__header">
+                    Hi there! We are the new kids on the block <br />
+                    and we build awesome websites and mobile apps.
+                </h1>
+                <button class="welcome__button">Work with us!</button>
+            </article>
+        </section>
+
+        <section id='about' class='services'>
+            <div class="container">
+                <h2 class="services__header">SERVICES WE PROVIDE</h2>
+                <p class="services__description">We are working with both
+                    individuals and businesses from
+                    all over the globe <br />
+                    to create awesome websites and applications.</p>
+                <article class="services__group row">
+                    <div class='services__item col-3'>
+                        <figure>
+                            <img src='./assets/flag.png' alt='Flag icon' />
+                        </figure>
+                        <h3 class="services__item--header">Branding</h3>
+                        <p class="services__item--description">
+                            Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit, sed diam nonummy nibh.
+                        </p>
+                    </div>
+                    <div class='services__item col-3'>
+                        <figure>
+                            <img src='./assets/pencil.png' alt='Pencil icon'
+                                />
+                        </figure>
+                        <h3 class="services__item--header">Design</h3>
+                        <p class="services__item--description">
+                            Sed ut perspiciatis unde omnis iste natus error
+                            sit voluptatem
+                        </p>
+                    </div>
+                    <div class='services__item col-3'>
+                        <figure>
+                            <img src='./assets/gears.png' alt='Gears icon'
+                                />
+                        </figure>
+                        <h3 class="services__item--header">Development</h3>
+                        <p class="services__item--description">
+                            At vero eos et accusamus et iusto odio
+                            dignissimos qui blanditiis praesentium.
+                        </p>
+                    </div>
+                    <div class='services__item col-3'>
+                        <figure>
+                            <img src='./assets/rocket.png' alt='Rocket icon'
+                                />
+                        </figure>
+                        <h3 class="services__item--header">Rocket science</h3>
+                        <p class="services__item--description">
+                            Et harum quidem rerum est et expedita
+                            distinctio. Nam libero tempore.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2 class="about__title">MEET OUR BEAUTIFUL TEAM</h2>
+            <p class="about__description">We are a small team of designers
+                and developers, who help
+                brands with big ideas.</p>
+            <section class="about__persons row container">
+                <div class='about__person col-3'>
+                    <figure class="person__avatar">
+                        <img src="./assets/anne_avatar.png" />
+                    </figure>
+                    <h3 class="person__name">
+                        ANNE HATHAWAY
+                    </h3>
+                    <p class="person__profession">
+                        CEO / Marketing Guru
+                    </p>
+                    <p class="person__description">
+                        Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit, sed diam nonummy
+                        nibh
+                        euismod tincidunt ut laoreet dolore magna.
+                    </p>
+                    <div class="person__contact">
+                        <button class="contact__facebook-btn"></button>
+                        <button class="contact__twitter-btn"></button>
+                        <button class="contact__linkedin-btn"></button>
+                        <button class="contact__mail-btn"></button>
+                    </div>
+                </div>
+                <div class='about__person col-3'>
+                    <figure class="person__avatar">
+                        <img src="./assets/kate_avatar.png" />
+                    </figure>
+                    <h3 class="person__name">
+                        Kate Upton
+                    </h3>
+                    <p class="person__profession">
+                        Creative Director
+                    </p>
+                    <p class="person__description">
+                        Duis aute irure dolor in in voluptate velit esse
+                        cillum dolore fugiat nulla pariatur. Excepteur
+                        sint
+                        occaecat non diam proident.
+                    </p>
+                    <div class="person__contact">
+                        <button class="contact__twitter-btn"></button>
+                        <button class="contact__linkedin-btn"></button>
+                        <button class="contact__mail-btn"></button>
+                    </div>
+                </div>
+                <div class='about__person col-3'>
+                    <figure class="person__avatar">
+                        <img src="./assets/olivia_avatar.png" />
+                    </figure>
+                    <h3 class="person__name">
+                        Olivia Wilde
+                    </h3>
+                    <p class="person__profession">
+                        Lead Designer
+                    </p>
+                    <p class="person__description">
+                        Nemo enim ipsam voluptas sit aspernatur aut odit
+                        aut
+                        fugit, sed quia consequuntur magni dolores eos
+                        qui
+                        ratione voluptatem nesciunt.
+                    </p>
+                    <div class="person__contact">
+                        <button class="contact__facebook-btn"></button>
+                        <button class="contact__twitter-btn"></button>
+                        <button class="contact__linkedin-btn"></button>
+                        <button class="contact__mail-btn"></button>
+                    </div>
+                </div>
+                <div class='about__person col-3'>
+                    <figure class="person__avatar">
+                        <img src="./assets/ashley_avatar.png" />
+                    </figure>
+                    <h3 class="person__name">
+                        Ashley Greene
+                    </h3>
+                    <p class="person__profession">
+                        SEO / Developer
+                    </p>
+                    <p class="person__description">
+                        Sed ut perspiciatis unde omnis iste natus error
+                        sit
+                        voluptatem accusantium doloremque laudantium,
+                        totam
+                        rem aperiam.
+                    </p>
+                    <div class="person__contact">
+                        <button class="contact__facebook-btn"></button>
+                        <button class="contact__twitter-btn"></button>
+                        <button class="contact__mail-btn"></button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="skills">
+            <h2 class="skills__title">WE GOT SKILLS!</h2>
+            <p class="skills__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+            </p>
+            <section class="skills__diagrams row container">
+                <div class="skills__diagram col-3">
+                    <figure class="skills__diagram--icon">
+                        <img src='./assets/diagram_95p.png' />
+                    </figure>
+                    <h3>Web Design</h3>
+                </div>
+                <div class="skills__diagram col-3">
+                    <figure class="skills__diagram--icon">
+                        <img src='./assets/diagram_75p.png' />
+                    </figure>
+                    <h3>HTML / CSS</h3>
+                </div>
+                <div class="skills__diagram col-3">
+                    <figure class="skills__diagram--icon">
+                        <img src='./assets/diagram_70p.png' />
+                    </figure>
+                    <h3>GRAPHIC DESIGN</h3>
+                </div>
+                <div class="skills__diagram col-3">
+                    <figure class="skills__diagram--icon">
+                        <img src='./assets/diagram_85p.png' />
+                    </figure>
+                    <h3>UI / UX</h3>
+                </div>
+            </section>
+        </section>
+
+        <section class="portfolio">
+            <h2 class="portfolio__title">OUR PORTFOLIO</h2>
+            <p class="portfolio__description">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                amet consectetur, adipisci velit, sed quia non numquam
+            </p>
+            <div class="portfolio__buttons">
+                <button class="portfolio__button portfolio__button--active">All</button>
+                <button class="portfolio__button">Web</button>
+                <button class="portfolio__button">Apps</button>
+                <button class="portfolio__button">Icons</button>
+            </div>
+            <section class="portfolio__items first-row row">
+                <div class="portfolio__item col-6">
+                    <figure class="portfolio__item--picture">
+                        <img
+                            src='./assets/isometric.png'
+                            alt='Isometric
+                            Perspective Mock-Up'
+                            />
+                    </figure>
+                    <p class="portfolio__item--description">
+                        Isometric Perspective Mock-Up
+                    </p>
+                </div>
+                <div class="portfolio__item col-6">
+                    <figure class="portfolio__item--picture">
+                        <img
+                            src='./assets/timezone.png'
+                            alt='Time Zone App UI'
+                            />
+                    </figure>
+                    <p class="portfolio__item--description">
+                        Time Zone App UI
+                    </p>
+                </div>
+            </section>
+            <section class="portfolio__items second-row row">
+                <div class="portfolio__item col-6">
+                    <figure class="portfolio__item--picture">
+                        <img
+                            src='./assets/viromedia.png'
+                            alt='Viro Media Players UI'
+                            />
+                    </figure>
+                    <p class="portfolio__item--description">
+                        Viro Media Players UI
+                    </p>
+                </div>
+                <div class="portfolio__item col-6">
+                    <figure class="portfolio__item--picture">
+                        <img
+                            src='./assets/magazineflat.png'
+                            alt='Blog / Magazine Flat UI Kit' />
+                    </figure>
+                    <p class="portfolio__item--description">
+                        Blog / Magazine Flat UI Kit
+                    </p>
+                </div>
+            </section>
+            <button class="portfolio__load-button">LOAD MORE PROJECTS</button>
+        </section>
+
+        <section class="opinions">
+            <h2 class="opinions__title">WHAT POEPLE SAY ABOUT US</h2>
+            <p class="opinions__description">Our clients love us!</p>
+            <section class="opnions__list first-row row container">
+                <article class="opinion__item col-6">
+                    <figure class="opinion__avatar">
+                        <img src='./assets/chanel_avatar.jpeg'
+                            alt='Chanel Iman' />
+                    </figure>
+                    <div class="opinion__content">
+                        <blockquote class="opinion__quotation">
+                            “Nullam dapibus blandit orci, viverra gravida
+                            dui lobortis eget. Maecenas fringilla urna eu
+                            nisl
+                            scelerisque.”
+                        </blockquote>
+                        <h3 class="opinion__author">Chanel Iman</h3>
+                        <p class="opinion__author-profesion">
+                            CEO of Pinterest
+                        </p>
+                    </div>
+                </article>
+                <article class="opinion__item col-6">
+                    <figure class="opinion__avatar">
+                        <img src='./assets/ashley_avatar.png'
+                            alt='Chanel Iman' />
+                    </figure>
+                    <div class="opinion__content">
+                        <blockquote class="opinion__quotation">
+                            “Vivamus luctus urna sed urna ultricies ac
+                            tempor dui sagittis. In condimentum facilisis
+                            porta.”
+                        </blockquote>
+                        <h3 class="opinion__author">ADRIANA LIMA</h3>
+                        <p class="opinion__author-profesion">
+                            Founder of Instagram
+                        </p>
+                    </div>
                 </article>
             </section>
+            <section class="opnions__list second-row row container">
+                <article class="opinion__item col-6">
+                    <figure class="opinion__avatar">
+                        <img src='./assets/anne_avatar.png'
+                            alt='ANNE HATHAWAY' />
+                    </figure>
+                    <div class="opinion__content">
+                        <blockquote class="opinion__quotation">
+                            “Vivamus luctus urna sed urna ultricies ac
+                            tempor dui sagittis. In condimentum facilisis
+                            porta.”
+                        </blockquote>
+                        <h3 class="opinion__author">ANNE HATHAWAY</h3>
+                        <p class="opinion__author-profesion">
+                            Lead Designer at Behance
+                        </p>
+                    </div>
+                </article>
+                <article class="opinion__item col-6">
+                    <figure class="opinion__avatar">
+                        <img src='./assets/olivia_avatar.png'
+                            alt='EMMA STONE' />
+                    </figure>
+                    <div class="opinion__content">
+                        <blockquote class="opinion__quotation">
+                            “Phasellus non purus vel arcu tempor commodo.
+                            Fusce semper, purus vel luctus molestie, risus
+                            sem cursus neque.”
+                        </blockquote>
+                        <h3 class="opinion__author">EMMA STONE</h3>
+                        <p class="opinion__author-profesion">
+                            Co-Founder of Shazam
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </section>
 
-            <section id='about' class='services'>
-                <div class="container">
-                    <h2 class="services__header">SERVICES WE PROVIDE</h2>
-                    <p class="services__description">We are working with both
-                        individuals and businesses from
-                        all over the globe <br />
-                        to create awesome websites and applications.</p>
-                    <article class="services__group row">
-                        <div class='services__item col-3'>
-                            <figure>
-                                <img src='./assets/flag.png' alt='Flag icon' />
-                            </figure>
-                            <h3 class="services__item--header">Branding</h3>
-                            <p class="services__item--description">
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh.
-                            </p>
-                        </div>
-                        <div class='services__item col-3'>
-                            <figure>
-                                <img src='./assets/pencil.png' alt='Pencil icon'
-                                    />
-                            </figure>
-                            <h3 class="services__item--header">Design</h3>
-                            <p class="services__item--description">
-                                Sed ut perspiciatis unde omnis iste natus error
-                                sit voluptatem
-                            </p>
-                        </div>
-                        <div class='services__item col-3'>
-                            <figure>
-                                <img src='./assets/gears.png' alt='Gears icon'
-                                    />
-                            </figure>
-                            <h3 class="services__item--header">Development</h3>
-                            <p class="services__item--description">
-                                At vero eos et accusamus et iusto odio
-                                dignissimos qui blanditiis praesentium.
-                            </p>
-                        </div>
-                        <div class='services__item col-3'>
-                            <figure>
-                                <img src='./assets/rocket.png' alt='Rocket icon'
-                                    />
-                            </figure>
-                            <h3 class="services__item--header">Rocket science</h3>
-                            <p class="services__item--description">
-                                Et harum quidem rerum est et expedita
-                                distinctio. Nam libero tempore.
-                            </p>
-                        </div>
-                    </article>
+        <section class="contact">
+            <h2 class="contact__title">GET IN TOUCH</h2>
+            <p class="contact__description">
+                1600 Pennsylvania Ave NW, Washington, DC 20500, United
+                States
+                of America. Tel: (202) 456-1111
+            </p>
+            <form class="contact__form">
+                <div class="contact__inputs">
+                    <input type="text" class="form__input" placeholder="Your
+                        Name" />
+                    <input type="email" class="form__input" placeholder="Your
+                        Email" />
                 </div>
-            </section>
+                <textarea class="form__textarea" placeholder="Your Message"></textarea>
+                <button type='submit' class="form__button">SEND MESSAGE</button>
+            </form>
+        </section>
 
-            <section class="about">
-                <h2 class="about__title">MEET OUR BEAUTIFUL TEAM</h2>
-                <p class="about__description">We are a small team of designers
-                    and developers, who help
-                    brands with big ideas.</p>
-                <section class="about__persons row container">
-                    <div class='about__person col-3'>
-                        <figure class="person__avatar">
-                            <img src="./assets/anne_avatar.png" />
-                        </figure>
-                        <h3 class="person__name">
-                            ANNE HATHAWAY
-                        </h3>
-                        <p class="person__profession">
-                            CEO / Marketing Guru
-                        </p>
-                        <p class="person__description">
-                            Lorem ipsum dolor sit amet,
-                            consectetuer adipiscing elit, sed diam nonummy
-                            nibh
-                            euismod tincidunt ut laoreet dolore magna.
-                        </p>
-                        <div class="person__contact">
-                            <button class="contact__facebook-btn"></button>
-                            <button class="contact__twitter-btn"></button>
-                            <button class="contact__linkedin-btn"></button>
-                            <button class="contact__mail-btn"></button>
-                        </div>
-                    </div>
-                    <div class='about__person col-3'>
-                        <figure class="person__avatar">
-                            <img src="./assets/kate_avatar.png" />
-                        </figure>
-                        <h3 class="person__name">
-                            Kate Upton
-                        </h3>
-                        <p class="person__profession">
-                            Creative Director
-                        </p>
-                        <p class="person__description">
-                            Duis aute irure dolor in in voluptate velit esse
-                            cillum dolore fugiat nulla pariatur. Excepteur
-                            sint
-                            occaecat non diam proident.
-                        </p>
-                        <div class="person__contact">
-                            <button class="contact__twitter-btn"></button>
-                            <button class="contact__linkedin-btn"></button>
-                            <button class="contact__mail-btn"></button>
-                        </div>
-                    </div>
-                    <div class='about__person col-3'>
-                        <figure class="person__avatar">
-                            <img src="./assets/olivia_avatar.png" />
-                        </figure>
-                        <h3 class="person__name">
-                            Olivia Wilde
-                        </h3>
-                        <p class="person__profession">
-                            Lead Designer
-                        </p>
-                        <p class="person__description">
-                            Nemo enim ipsam voluptas sit aspernatur aut odit
-                            aut
-                            fugit, sed quia consequuntur magni dolores eos
-                            qui
-                            ratione voluptatem nesciunt.
-                        </p>
-                        <div class="person__contact">
-                            <button class="contact__facebook-btn"></button>
-                            <button class="contact__twitter-btn"></button>
-                            <button class="contact__linkedin-btn"></button>
-                            <button class="contact__mail-btn"></button>
-                        </div>
-                    </div>
-                    <div class='about__person col-3'>
-                        <figure class="person__avatar">
-                            <img src="./assets/ashley_avatar.png" />
-                        </figure>
-                        <h3 class="person__name">
-                            Ashley Greene
-                        </h3>
-                        <p class="person__profession">
-                            SEO / Developer
-                        </p>
-                        <p class="person__description">
-                            Sed ut perspiciatis unde omnis iste natus error
-                            sit
-                            voluptatem accusantium doloremque laudantium,
-                            totam
-                            rem aperiam.
-                        </p>
-                        <div class="person__contact">
-                            <button class="contact__facebook-btn"></button>
-                            <button class="contact__twitter-btn"></button>
-                            <button class="contact__mail-btn"></button>
-                        </div>
-                    </div>
-                </section>
-            </section>
+        <footer class="page-footer">
+            <ul class="links__list container">
+                <li class="links__item">
+                    <a href=''>Facebook</a>
 
-            <section class="skills">
-                <h2 class="skills__title">WE GOT SKILLS!</h2>
-                <p class="skills__description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                </p>
-                <section class="skills__diagrams row container">
-                    <div class="skills__diagram col-3">
-                        <figure class="skills__diagram--icon">
-                            <img src='./assets/diagram_95p.png' />
-                        </figure>
-                        <h3>Web Design</h3>
-                    </div>
-                    <div class="skills__diagram col-3">
-                        <figure class="skills__diagram--icon">
-                            <img src='./assets/diagram_75p.png' />
-                        </figure>
-                        <h3>HTML / CSS</h3>
-                    </div>
-                    <div class="skills__diagram col-3">
-                        <figure class="skills__diagram--icon">
-                            <img src='./assets/diagram_70p.png' />
-                        </figure>
-                        <h3>GRAPHIC DESIGN</h3>
-                    </div>
-                    <div class="skills__diagram col-3">
-                        <figure class="skills__diagram--icon">
-                            <img src='./assets/diagram_85p.png' />
-                        </figure>
-                        <h3>UI / UX</h3>
-                    </div>
-                </section>
-            </section>
+                </li>
+                <li class="links__item">
+                    <a href=''>Twitter</a>
+                </li>
+                <li class="links__item">
+                    <a href=''>Google+</a>
+                </li>
+                <li class="links__item">
+                    <a href=''>LinkedIn</a>
+                </li>
+                <li class="links__item">
+                    <a href=''>Behance</a>
+                </li>
+                <li class="links__item">
+                    <a href=''>Dribbble</a>
+                </li>
+                <li class="links__item">
+                    <a href=''>GitHub</a>
+                </li>
+            </ul>
+        </footer>
 
-            <section class="portfolio">
-                <h2 class="portfolio__title">OUR PORTFOLIO</h2>
-                <p class="portfolio__description">
-                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                    amet consectetur, adipisci velit, sed quia non numquam
-                </p>
-                <div class="portfolio__buttons">
-                    <button class="portfolio__button portfolio__button--active">All</button>
-                    <button class="portfolio__button">Web</button>
-                    <button class="portfolio__button">Apps</button>
-                    <button class="portfolio__button">Icons</button>
-                </div>
-                <section class="portfolio__items first-row row">
-                    <div class="portfolio__item col-6">
-                        <figure class="portfolio__item--picture">
-                            <img
-                                src='./assets/isometric.png'
-                                alt='Isometric
-                                Perspective Mock-Up'
-                                />
-                        </figure>
-                        <p class="portfolio__item--description">
-                            Isometric Perspective Mock-Up
-                        </p>
-                    </div>
-                    <div class="portfolio__item col-6">
-                        <figure class="portfolio__item--picture">
-                            <img
-                                src='./assets/timezone.png'
-                                alt='Time Zone App UI'
-                                />
-                        </figure>
-                        <p class="portfolio__item--description">
-                            Time Zone App UI
-                        </p>
-                    </div>
-                </section>
-                <section class="portfolio__items second-row row">
-                    <div class="portfolio__item col-6">
-                        <figure class="portfolio__item--picture">
-                            <img
-                                src='./assets/viromedia.png'
-                                alt='Viro Media Players UI'
-                                />
-                        </figure>
-                        <p class="portfolio__item--description">
-                            Viro Media Players UI
-                        </p>
-                    </div>
-                    <div class="portfolio__item col-6">
-                        <figure class="portfolio__item--picture">
-                            <img
-                                src='./assets/magazineflat.png'
-                                alt='Blog / Magazine Flat UI Kit' />
-                        </figure>
-                        <p class="portfolio__item--description">
-                            Blog / Magazine Flat UI Kit
-                        </p>
-                    </div>
-                </section>
-                <button class="portfolio__load-button">LOAD MORE PROJECTS</button>
-            </section>
+        <script src='./js/app.js'></script>
 
-            <section class="opinions">
-                <h2 class="opinions__title">WHAT POEPLE SAY ABOUT US</h2>
-                <p class="opinions__description">Our clients love us!</p>
-                <section class="opnions__list first-row row container">
-                    <article class="opinion__item col-6">
-                        <figure class="opinion__avatar">
-                            <img src='./assets/chanel_avatar.jpeg'
-                                alt='Chanel Iman' />
-                        </figure>
-                        <div class="opinion__content">
-                            <blockquote class="opinion__quotation">
-                                “Nullam dapibus blandit orci, viverra gravida
-                                dui lobortis eget. Maecenas fringilla urna eu
-                                nisl
-                                scelerisque.”
-                            </blockquote>
-                            <h3 class="opinion__author">Chanel Iman</h3>
-                            <p class="opinion__author-profesion">
-                                CEO of Pinterest
-                            </p>
-                        </div>
-                    </article>
-                    <article class="opinion__item col-6">
-                        <figure class="opinion__avatar">
-                            <img src='./assets/ashley_avatar.png'
-                                alt='Chanel Iman' />
-                        </figure>
-                        <div class="opinion__content">
-                            <blockquote class="opinion__quotation">
-                                “Vivamus luctus urna sed urna ultricies ac
-                                tempor dui sagittis. In condimentum facilisis
-                                porta.”
-                            </blockquote>
-                            <h3 class="opinion__author">ADRIANA LIMA</h3>
-                            <p class="opinion__author-profesion">
-                                Founder of Instagram
-                            </p>
-                        </div>
-                    </article>
-                </section>
-                <section class="opnions__list second-row row container">
-                    <article class="opinion__item col-6">
-                        <figure class="opinion__avatar">
-                            <img src='./assets/anne_avatar.png'
-                                alt='ANNE HATHAWAY' />
-                        </figure>
-                        <div class="opinion__content">
-                            <blockquote class="opinion__quotation">
-                                “Vivamus luctus urna sed urna ultricies ac
-                                tempor dui sagittis. In condimentum facilisis
-                                porta.”
-                            </blockquote>
-                            <h3 class="opinion__author">ANNE HATHAWAY</h3>
-                            <p class="opinion__author-profesion">
-                                Lead Designer at Behance
-                            </p>
-                        </div>
-                    </article>
-                    <article class="opinion__item col-6">
-                        <figure class="opinion__avatar">
-                            <img src='./assets/olivia_avatar.png'
-                                alt='EMMA STONE' />
-                        </figure>
-                        <div class="opinion__content">
-                            <blockquote class="opinion__quotation">
-                                “Phasellus non purus vel arcu tempor commodo.
-                                Fusce semper, purus vel luctus molestie, risus
-                                sem cursus neque.”
-                            </blockquote>
-                            <h3 class="opinion__author">EMMA STONE</h3>
-                            <p class="opinion__author-profesion">
-                                Co-Founder of Shazam
-                            </p>
-                        </div>
-                    </article>
-                </section>
-            </section>
-
-            <section class="contact">
-                <h2 class="contact__title">GET IN TOUCH</h2>
-                <p class="contact__description">
-                    1600 Pennsylvania Ave NW, Washington, DC 20500, United
-                    States
-                    of America. Tel: (202) 456-1111
-                </p>
-                <form class="contact__form">
-                    <div class="contact__inputs">
-                        <input type="text" class="form__input" placeholder="Your Name" />
-                        <input type="email" class="form__input" placeholder="Your Email" />
-                    </div>
-                    <textarea class="form__textarea" placeholder="Your Message"></textarea>
-                    <button type='submit' class="form__button">SEND MESSAGE</button>
-                </form>
-            </section>
-
-            <footer class="page-footer">
-                <ul class="links__list container">
-                    <li class="links__item">
-                        <a href=''>Facebook</a>
-
-                    </li>
-                    <li class="links__item">
-                        <a href=''>Twitter</a>
-                    </li>
-                    <li class="links__item">
-                        <a href=''>Google+</a>
-                    </li>
-                    <li class="links__item">
-                        <a href=''>LinkedIn</a>
-                    </li>
-                    <li class="links__item">
-                        <a href=''>Behance</a>
-                    </li>
-                    <li class="links__item">
-                        <a href=''>Dribbble</a>
-                    </li>
-                    <li class="links__item">
-                        <a href=''>GitHub</a>
-                    </li>
-                </ul>
-            </footer>
-
-        </body>
-    </html>
+    </body>
+</html>
