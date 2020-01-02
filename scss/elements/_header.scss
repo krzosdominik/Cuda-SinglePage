@@ -3,7 +3,10 @@ $header-height: 80px;
 .page-header {
   background-color: $welcome-bgColor;
   padding-top: 50px;
-  // height: $header-height;
+
+  @media (max-width: 750px) {
+    padding-top: 20px;
+  }
 
   .header__flex {
     display: flex;
@@ -12,7 +15,7 @@ $header-height: 80px;
 
     @media (max-width: 750px) {
       justify-content: center;
-      flex-direction: column;
+      // flex-direction: column;
     }
   }
 
@@ -20,8 +23,18 @@ $header-height: 80px;
     list-style: none;
     display: flex;
 
+    @media (max-width: 750px) {
+      justify-content: center;
+      flex-direction: column;
+    }
+
     .navigation__item {
-      box-sizing: border-box;
+      @media (max-width: 750px) {
+        margin-bottom: 30px;
+        padding: 0;
+        text-align: center;
+      }
+
       a {
         text-decoration: none;
         color: #fff;
@@ -32,9 +45,6 @@ $header-height: 80px;
         &:hover {
           background-color: #643a79;
           border-radius: 5px;
-        }
-        @media (max-width: 750px) {
-          padding: 0 5px;
         }
       }
     }
