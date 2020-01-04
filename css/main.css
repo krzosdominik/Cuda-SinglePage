@@ -476,13 +476,8 @@ body {
 
 .page-header {
   background-color: #87509c;
-  padding-top: 50px;
-}
-
-@media (max-width: 750px) {
-  .page-header {
-    padding-top: 20px;
-  }
+  padding-top: 20px;
+  height: 80px;
 }
 
 .page-header .header__flex {
@@ -519,7 +514,7 @@ body {
 
 .welcome {
   background-color: #87509c;
-  min-height: calc(100vh - 122px);
+  min-height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -742,7 +737,7 @@ h2 {
   cursor: pointer;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 500px) {
   .portfolio .portfolio__buttons .portfolio__button {
     width: 50vw;
     border-radius: 0;
@@ -1097,6 +1092,8 @@ h2 {
     background-color: transparent;
     border: 0;
     margin: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
   }
   .hamburger,
   .navigation {
@@ -1105,8 +1102,8 @@ h2 {
     transition: transform 0.3s 0.1s ease-in-out, -webkit-transform 0.3s 0.1s ease-in-out;
   }
   .hamburger--active {
-    -webkit-transform: translatex(250px);
-            transform: translatex(250px);
+    -webkit-transform: translatex(220px);
+            transform: translatex(220px);
   }
   .hamburger__box {
     width: 35px;

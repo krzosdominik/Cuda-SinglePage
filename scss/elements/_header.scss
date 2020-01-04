@@ -2,11 +2,10 @@ $header-height: 80px;
 
 .page-header {
   background-color: $welcome-bgColor;
-  padding-top: 50px;
+  padding-top: 20px;
+  height: 80px;
 
-  @media (max-width: 750px) {
-    padding-top: 20px;
-  }
+  
 
   .header__flex {
     display: flex;
