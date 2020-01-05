@@ -1,0 +1,38 @@
+.page-footer {
+  background-color: $footer-bgColor;
+  display: flex;
+  justify-content: center;
+
+  .links__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .links__item {
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+        padding: 0 20px;
+        transition: color 0.1s 0.1s;
+
+        &:hover {
+          color: #30bae7;
+        }
+
+        @media (max-width: 800px) {
+          padding: 0;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}

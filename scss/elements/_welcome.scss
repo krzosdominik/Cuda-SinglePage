@@ -1,0 +1,18 @@
+.welcome {
+  background-color: $welcome-bgColor;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #f7f3ea;
+  text-align: center;
+
+  .welcome__header {
+      font-size: $headers-size;
+  }
+
+  .welcome__button {
+      @include buttons(#eb7d4b);
+  }
+}

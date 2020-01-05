@@ -1,0 +1,38 @@
+.skills {
+  background-color: $skills-bgColor;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #3c4761;
+  text-align: center;
+
+  .skills__title {
+    font-size: $headers-size;
+  }
+
+  .skills__description {
+    font-size: $description-size;
+    margin-bottom: 80px;
+    margin-top: -4px;
+  }
+
+  .skills__diagrams {
+    text-align: center;
+
+    .skills__diagram {
+      .skills__diagram--icon img {
+        @media (min-width: 950px) and (max-width: 1150px) {
+          height: 100px;
+        }
+      }
+
+      h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 0.48px;
+      }
+    }
+  }
+}

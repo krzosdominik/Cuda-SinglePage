@@ -1,0 +1,40 @@
+.services {
+  min-height: 100vh;
+  background-color: $services-bgColor;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  .services__header {
+    font-size: $headers-size;
+  }
+
+  .services__description {
+    font-size: $description-size;
+    margin-bottom: 80px;
+  }
+
+  .services__item {
+    // padding: 20px;
+
+    img {
+      height: 120px;
+    }
+
+    .services__item--header {
+      text-transform: uppercase;
+      line-height: 18px;
+      letter-spacing: 0.48px;
+      margin-top: 50px;
+    }
+
+    .services__item--description {
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0.32px;
+    }
+  }
+}

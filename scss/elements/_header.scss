@@ -1,0 +1,39 @@
+$header-height: 80px;
+
+.page-header {
+  background-color: $welcome-bgColor;
+  padding-top: 20px;
+  height: 80px;
+
+  .header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 750px) {
+      justify-content: center;
+    }
+  }
+
+  .navigation__list {
+    list-style: none;
+    display: flex;
+
+    .navigation__item {
+      a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        transition: background-color 0.1s, border-radius 0.1s;
+
+        @media (min-width: 750px) {
+          &:hover {
+            background-color: #643a79;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
