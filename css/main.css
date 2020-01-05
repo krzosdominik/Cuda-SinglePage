@@ -756,18 +756,18 @@ h2 {
 
 .portfolio .portfolio__item .portfolio__item--picture img {
   margin-top: 60px;
+  height: 250px;
 }
 
-@media (max-width: 1150px) {
+@media (min-width: 500px) and (max-width: 1150px) {
   .portfolio .portfolio__item .portfolio__item--picture img {
     margin-top: 20px;
-    height: 250px;
+    height: 200px;
   }
 }
 
 @media (max-width: 500px) {
   .portfolio .portfolio__item .portfolio__item--picture img {
-    margin-top: 20px;
     height: 150px;
   }
 }
@@ -1050,7 +1050,7 @@ h2 {
   align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .page-footer .links__list {
     justify-content: center;
     flex-wrap: wrap;
